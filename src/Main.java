@@ -1,17 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int firstBalance = 100;
-        int payAmount = 2000;
-        int bonusPrice= 100;
-        int bonus =0;
-
-        if (payAmount > 1000) {
-            System.out.println("начисляем бонус");
-            bonus =payAmount/bonusPrice;
-            System.out.println("сумма бонуса "+ bonus);
+        int account = 100; // RUB
+        int put = 1000; //RUB
+        int result = put;
+        int less = 1000;
+        int percent;
+        if (put > less) {
+            percent = 1;
+        } else {
+            percent = 0;
         }
-        else {System.out.println("не начисляем бонус");}
-        firstBalance = firstBalance+payAmount+bonus;
-        System.out.println("текущий счет клиента "+firstBalance);
+        long amount = result;
+        long bonus = amount * percent / 100;
+        System.out.println(bonus + amount + account);
+        System.out.println("Bonus is: " + bonus);
     }
 }
